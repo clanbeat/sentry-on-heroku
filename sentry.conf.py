@@ -40,7 +40,7 @@ SENTRY_FEATURES['auth:register'] = False
 # Generic Redis configuration used as defaults for various things including:
 # Buffers, Quotas, TSDB
 
-redis_url = urlparse.urlparse(os.environ['REDIS_URL'])
+redis_url = urlparse.urlparse(os.environ['REDISCLOUD_URL'])
 SENTRY_REDIS_OPTIONS = {
     'hosts': {
         0: {
@@ -81,7 +81,7 @@ SENTRY_CACHE = 'sentry.cache.redis.RedisCache'
 # on a Python framework called Celery to manage queues.
 
 CELERY_ALWAYS_EAGER = False
-BROKER_URL = os.environ['REDIS_URL'] + '/0'
+BROKER_URL = os.environ['REDISCLOUD_URL'] + '/0'
 
 ###############
 # Rate Limits #
