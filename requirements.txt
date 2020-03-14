@@ -64,7 +64,7 @@ pyyaml==3.11              # via sentry
 raven==5.10.0             # via sentry
 rb==1.3.1                 # via sentry
 redis==2.10.5             # via rb, sentry
-requests==2.7.0           # via sentry
+requests==2.7.17          # via sentry
 sentry-flowdock==0.1.1
 sentry-github==0.1.2
 sentry-slack==0.5.0
